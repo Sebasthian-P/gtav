@@ -10,6 +10,7 @@ html {
 
 body {
     min-width: 400px;
+    user-select: none;
 }
 
 li {
@@ -18,7 +19,7 @@ li {
 
 .grip_line,
 .lists_mobile,
-.bg_cover_mobile {
+.bg_cover .mobile {
     display: none;
 }
 
@@ -82,6 +83,9 @@ header .nav_bar .lists :nth-child(1) {
 
 /*  Cover  */
 
+main {
+    position: relative;
+}
 
 .cover,
 .bg_cover {
@@ -107,7 +111,7 @@ header .nav_bar .lists :nth-child(1) {
     justify-content: center;
 }
 
-.bg_cover img {
+.bg_cover .desktop {
     display: block;
     width: 400px;
 }
