@@ -29,7 +29,7 @@ header {
     height: 7.7vh;
     position: sticky;
     top: 0px;
-    z-index: 200;
+    z-index: 1000;
 }
 
 header .nav_bar {
