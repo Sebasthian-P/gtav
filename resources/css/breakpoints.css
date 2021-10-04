@@ -15,6 +15,7 @@
 
     header .nav_bar .grip_line i {
         transition: all 200ms;
+        font-size: 25px;
     }
 
     header .nav_bar .grip_line i.fa-times {
