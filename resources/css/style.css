@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    user-select: none;
+    min-width: 400px;
 }
 
 li {
@@ -27,7 +27,7 @@ header {
     width: 100%;
     height: 7.7vh;
     position: sticky;
-    top: 0;
+    top: 0px;
     z-index: 100;
 }
 

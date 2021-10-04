@@ -15,19 +15,22 @@
     header .nav_bar .lists_mobile {
         display: block;
         position: absolute;
-        top: 80px;
-        right: -100px;
-        background-color: rgba(0, 0, 0, 0.431);
+        top: 51.97px;
+        right: 0px;
+        background-color: rgba(0, 0, 0, .5);
         color: #fff;
         border-radius: 10px;
         padding: 15px;
         font-size: 1.2em;
-        transition: all 300ms;
+        opacity: 0;
+        transition: all 200ms;
     }
 
 
     header .nav_bar .grip_line:hover .lists_mobile {
-        right: 20px;
+        top: 70px;
+        right: 10px;
+        opacity: 1;
     }
 
     .gallery_cont {
