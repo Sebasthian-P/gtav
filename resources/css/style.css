@@ -1,0 +1,176 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    user-select: none;
+}
+
+li {
+    list-style: none;
+}
+
+.grip_line,
+.lists_mobile,
+.bg_cover_mobile {
+    display: none;
+}
+
+header {
+    font-family: 'Teko', sans-serif;
+    width: 100%;
+    height: 7.7vh;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .nav_bar {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 25px;
+    font-size: 20px;
+    box-shadow: 0px 0px 20px -10px #000;
+}
+
+header .nav_bar .logo,
+header .nav_bar .lists {
+    flex-grow: 1;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+header .nav_bar .logo {
+    flex-grow: 9;
+    letter-spacing: 1px;
+}
+
+header .nav_bar .lists {
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 1.5px;
+}
+
+header .nav_bar .lists li {
+    padding: 3px 20px;
+    border-radius: 18px;
+    transition: all 200ms;
+}
+
+header .nav_bar .lists li:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+header .nav_bar .lists :nth-child(1) {
+    background-color: #000;
+    color: #fff;
+}
+
+
+/*  Cover  */
+
+
+.cover,
+.bg_cover {
+    height: calc(100vh - 7.7vh);
+}
+
+.cover {
+    width: 100%;
+    background-image: url(https://wallpapercave.com/wp/wp8330418.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.bg_cover {
+    width: 100%;
+    background-color: rgb(0, 0, 0, .5);
+    position: absolute;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg_cover img {
+    display: block;
+    width: 400px;
+}
+
+
+/*  Gallery  */
+
+.gallery_cont {
+    font-family: 'Concert One', cursive;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 50px;
+}
+
+.gallery_cont h2 {
+    margin: 0 30px 50px;
+}
+
+.gallery_cont .gallery {
+    columns: 3 350px;
+    gap: 10px;
+    background-color: rgba(216, 214, 214, 0.253);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.gallery_cont .gallery .cont {
+    position: relative;
+    cursor: pointer;
+}
+
+.gallery_cont .gallery .bg_image {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, .5);
+    color: #fff;
+    position: absolute;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: .7em;
+    transition: all 200ms;
+    opacity: 0;
+}
+
+.gallery_cont .gallery .bg_image h2{
+    margin-bottom: 10px;
+}
+
+.gallery_cont .gallery .cont img {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    outline: 2px solid #fff;
+    outline-offset: -10px;
+}
+
+.gallery_cont .gallery .cont:hover .bg_image {
+    opacity: 1;
+}
+
+.gallery_cont .gallery .cont:hover img{
+    outline: none;
+}
